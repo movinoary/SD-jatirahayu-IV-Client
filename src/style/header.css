@@ -1,0 +1,201 @@
+:root {
+    --Birutua   : #22577E;
+    --Biru      : #5584AC;
+    --BiruMuda  : #95D1CC;
+    --PutihBiru : #d4f4f6;
+    --Putih     : #FFFFFF;
+    --Hitam     : #000000;
+}
+
+
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.603)),url(https://images.pexels.com/photos/357271/pexels-photo-357271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(red, green, blue, alpha);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.sub{
+    height: 50vh;
+}
+.header-judul {
+    font-weight: 900;
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.header-subjudul {
+    color: #fff;
+    margin-top: 35px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.FunTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.function-title{
+    font-weight: 900;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--hitam);
+}
+
+.function-title i {
+    margin-left: 10px;
+    color: var(--Birutua);
+}
+
+.function-title span{
+    color: var(--Birutua);
+}
+
+.function-desc{
+    font-size: 25px;
+    text-align: center;
+    color: var(--Hitam);
+}
+
+@media  screen and (max-width:1000px) {
+    .header-judul{
+        font-size: 50px;
+    }
+    .header-subjudul{
+        font-size: 40px;
+    }
+}
+
+@media  screen and (max-width:760px) {
+    .header-judul{
+        text-align: center;
+        font-size: 40px;
+    }
+    .header-subjudul{
+        font-size: 30px;
+    }
+    .function-title{
+        font-size: 30px;
+    }
+}
+
+/* ----- start Footer ----- */
+.footer-container {
+  background-color: var(--Birutua);
+  color: var(--PutihBiru);
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-bawah{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-link-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link-wrapper p{
+  font-size: 40px;
+  color: var(--PutihBiru);
+}
+
+.footer-about{
+  display: flex;
+  flex-direction: row;
+}
+.footer-link-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+}
+.footer-link-items i{
+  font-size: 25px;
+  margin-right: 10px;
+}
+.footer-link-items h2 {
+  margin-bottom: 16px;
+  font-size: 25px;
+}
+
+.footer-link-items > h2 {
+  color: var(--BiruMuda);
+}
+
+.footer-link-items a {
+  color: var(--Putih);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link-items a:hover {
+  color: var(--BiruMuda);
+  transition: 0.3s ease-out;
+}
+
+.footer-email-form h2 {
+  margin-bottom: 2rem;
+}
+
+.social-media-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.social-logo {
+  color: var(--var-kuning);
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.lisensi{
+  display: flex;
+  flex-direction: column;
+}
+.website-rights {
+  color: var(--var-putih);
+  font-size: 15px;
+}
+
+.Lokasi{
+  text-align: right;
+  padding-left: 5%;
+}
+.lokasi iframe{
+  height: 350px;
+  width: 600px;
+  border-radius: 20px;
+}
+/* ----- End Footer ----- */
