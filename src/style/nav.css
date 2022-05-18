@@ -39,7 +39,7 @@
 }
 
 .nav-links {
-  color: #000;
+  color: var(--PutihBiru);
   text-decoration: none;
   padding: 0.5rem 1rem;
   margin: 0 1rem;

@@ -1,5 +1,16 @@
+:root {
+  --Birutua   : #22577E;
+  --Biru      : #5584AC;
+  --BiruMuda  : #95D1CC;
+  --PutihBiru : #d4f4f6;
+  --Putih     : #FFFFFF;
+  --Hitam     : #000000;
+}
+
 .modal{
     width: 100%;
+    margin-top: -3rem;
+    margin-left: -3rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,14 +22,40 @@
 }
 .modal-row{
     width: 500px;
-    height: 170px;
+    height: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-color: var(--white);
+    background-color: var(--Putih);
     border-radius: 5px;
-    border: 1px solid var(--black);
     overflow: hidden;
 }
+
+.modal-select{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.modal-select select,
+.modal-select input,
+.modal-select label,
+.modal-select textarea{
+    resize: none;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.modal-ans label{
+    margin-right: 10px;
+}
+
+.modal-button button{
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 5px;
+    width: 100px;
+}
+

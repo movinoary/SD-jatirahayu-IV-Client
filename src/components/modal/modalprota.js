@@ -14,7 +14,8 @@ const ModalProta = ({ showModal, setShowModal }) => {
     {showModal ? (    
     <div className='modal' onClick={closeModal} ref={modalRef} >
           <form className='modal-row'> 
-            <div>
+          <h1>Tambah Prota</h1>
+            <div className='modal-select'>
                 <label> Tema</label>
                 <select id="subject">
                 <option>Pembelajaran 1</option>
@@ -25,7 +26,7 @@ const ModalProta = ({ showModal, setShowModal }) => {
                 <option>Pembelajaran 6</option>
             </select>
             </div>
-            <div>
+            <div className='modal-select'>
                 <label> Subtema</label>
                 <select id="subject">
                 <option>Pembelajaran 1</option>
@@ -36,19 +37,23 @@ const ModalProta = ({ showModal, setShowModal }) => {
                 <option>Pembelajaran 6</option>
             </select>
             </div>
-            <div>
+            <div className='modal-select'>
                 <label> Pembelajaran</label>
                 <input type='text' /> 
             </div>
-            <div>
+            <div className='modal-select'>
                 <label> Alokasi Waktu</label>
                 <input type='text' /> 
             </div>
-            <div>
+            <div className='modal-select'>
                 <label> Ket</label>
-                <input type='text' /> 
+                <textarea></textarea>
             </div>
-    </form>
+            <div className='modal-button'>
+                <button>Simpan</button> 
+                <button onClick={closeModal}>close</button>
+            </div>
+          </form>
     </div>
     ) : null}
     </>

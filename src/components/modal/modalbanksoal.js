@@ -13,8 +13,9 @@ const ModalBankSoal = ({ showModal, setShowModal }) => {
     <>
     {showModal ? (   
     <div className='modal' onClick={closeModal} ref={modalRef} > 
-      <form className=''> 
-        <div>
+      <form className='modal-row'> 
+      <h1>Tambah Soal</h1>
+        <div className='modal-select'>
             <label> Tema</label>
             <select id="subject">
             <option>Pembelajaran 1</option>
@@ -25,7 +26,7 @@ const ModalBankSoal = ({ showModal, setShowModal }) => {
             <option>Pembelajaran 6</option>
         </select>
         </div>
-        <div>
+        <div className='modal-select'>
             <label> Subtema</label>
             <select id="subject">
             <option>Pembelajaran 1</option>
@@ -36,36 +37,39 @@ const ModalBankSoal = ({ showModal, setShowModal }) => {
             <option>Pembelajaran 6</option>
         </select>
         </div>
-        <div>
+        <div className='modal-select'>
             <label> Pembelajaran</label>
             <input type='text' /> 
         </div>
-        <div>
+        <div className='modal-select'>
             <label> Soal</label>
             <textarea></textarea>
         </div>
-        <div>
+        <div className='modal-select'>
             <label> Pilihan Jawaban</label>
                 <div>
-                    <div>
+                    <div className='modal-ans'>
                       <label>A</label>
                       <input type="text" />
                     </div>
-                    <div>
+                    <div className='modal-ans'>
                       <label>B</label>
                       <input type="text" />
                     </div>
-                    <div>
+                    <div className='modal-ans'>
                       <label>C</label>
                       <input type="text" />
                     </div>
-                    <div>
+                    <div className='modal-ans'>
                       <label>D</label>
                       <input type="text" />
                     </div>
                 </div>
         </div>
-        <button>Simpan</button>
+        <div className='modal-button'>
+          <button>Simpan</button>
+          <button onClick={closeModal}>close</button>
+        </div>
       </form>
     </div>
     ) : null}

@@ -7,26 +7,26 @@ const Profil = () => {
   return (
     <>
     <Components.Nav />
-        <div className='container row'>
-            <Link to='/profil'>
+        <div className='profile-row'>
+            <Link to='/profil' className='txt-dec'>
                 <Components.CardIkon
                     judul='Profil Sekolah'
                     icon="fas fa-school"
                 />
             </Link>
-            <Link to='/profil/guru'>
+            <Link to='/profil/guru' className='txt-dec'>
                 <Components.CardIkon 
                     judul='Profil Guru'
                     icon='fas fa-chalkboard-teacher'
                 />
             </Link>
-            <Link to='/profil/galeri'>
+            <Link to='/profil/galeri' className='txt-dec'>
                 <Components.CardIkon 
                     judul='Galeri Sekolah'
                     icon='fas fa-images'
                 />
             </Link>
-            <Link to='/profil/anggaran'>
+            <Link to='/profil/anggaran' className='txt-dec'>
                 <Components.CardIkon 
                     judul='Anggaran'
                     icon='far fa-chart-bar'
