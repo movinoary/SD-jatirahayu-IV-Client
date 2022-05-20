@@ -7,13 +7,16 @@ const Berita = () => {
     <>
     <Components.Nav />
     <Components.Header cname='header sub' title='Berita' subtitle='sekolah' />
-    <div className='container row'>
+    <div className='container row-berita'>
       <Link to='/berita/isi'>
         <Components.CardBerita/>
       </Link>
       <Link to='/berita/isi'>
         <Components.CardBerita/>
       </Link>
+      <Link to='/berita/isi'>
+        <Components.CardBerita/>
+      </Link> 
       <Link to='/berita/isi'>
         <Components.CardBerita/>
       </Link>
